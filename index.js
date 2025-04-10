@@ -4,13 +4,13 @@ const app = express();
 const port = 3000;
 
 var ToDo = require('./todo');
-var list = [];
-list.push( new ToDo("Spesa", "pane, acqua", 3, false, Date.now()) );
+var ToDoList = require('./todolist');
 
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
-  res.write( JSON.stringify(list));
+  res.write( "Ciao" );
   res.end();
+  console.log("Ciao");
 })
 
 app.listen(port, () => {

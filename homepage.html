@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Mangement</title>
+</head>
+<body onload="displayContentData()">
+    <h3>To Do Management</h3>
+    <img src="logo.png" alt="Logo applicazione" style="max-width: 100%; height: auto;">
+    <div id="content"></div>
+</body>
+
+<script>
+
+var jsonDataString = 'json-data-string-placeholder';
+var data = null;
+
+function displayContentData() {
+    data = JSON.parse( jsonDataString );
+    let s = "<p>" + JSON.stringify(data) + "</p>";
+    document.getElementById("content").innerHTML = s;
+}
+
+</script>
+
+</html>

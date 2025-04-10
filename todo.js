@@ -1,5 +1,5 @@
 
-module.exports = class ToDo {
+class ToDo {
 
     constructor ( title, des, priority, done, date ) {
         this.title = title;
@@ -14,3 +14,5 @@ module.exports = class ToDo {
     }
 
 }
+
+module.exports = ToDo;
