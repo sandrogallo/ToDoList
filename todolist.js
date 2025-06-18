@@ -11,7 +11,14 @@ class ToDoList {
         this.list.push( a1 );
     }
 
-
+    toString() {
+        let s = "";
+        for (a in this.list) {
+            s += a.toString();
+            s += "\n";
+        }
+        return s;
+    }
 }
 
 module.exports = ToDoList;
